@@ -6,8 +6,8 @@ import { Server } from 'socket.io';
 
 // import { router } from './router';
 
-const PORT = 3002;
 const app = express();
+const PORT = 3001;
 const server = http.createServer(app);
 export const io = new Server(server);
 
