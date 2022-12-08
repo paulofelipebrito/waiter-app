@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import http from 'node:http';
 import path from 'node:path';
 import { Server } from 'socket.io';
+import { cors } from './app/middlewares/cors';
 
 // import { router } from './router';
 
@@ -15,12 +16,7 @@ mongoose
   .connect('mongodb://localhost:27017')
   .then(() => {
     console.log('Connected to MongoDB successfully');
-    app.use((_request, response, next) => {
-      response.setHeader('Access-Control-Allow-Origin', '*');
-      response.setHeader('Access-Control-Allow-Methods', '*');
-      response.setHeader('Access-Control-Allow-Headers', '*');
-      return next();
-    });
+    app.use(cors);
     app.use(
       '/uploads',
       express.static(path.resolve(__dirname, '..', 'uploads'))
