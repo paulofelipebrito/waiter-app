@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { io } from '../../server';
 
-import OrderCategory from '../repositories/OrderCategory';
+import OrderCategory from '../repositories/OrderRepository';
 
 class OrderController {
   async listOrders(_request: Request, response: Response) {
