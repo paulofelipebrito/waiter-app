@@ -5,14 +5,14 @@ class ProductRepository {
     return await Product.find();
   }
 
-  async create(name: string, description: string, price: number, category: string, imagePath?: string, ingredients?: string) {
+  async create(name: string, description: string, price: number, category: string, ingredients: any[], imagePath?: string) {
     return await Product.create({
       name,
       description,
       imagePath,
       price: Number(price),
       category,
-      ingredients: ingredients ? JSON.parse(ingredients) : [],
+      ingredients: ingredients,
     });
   }
 }

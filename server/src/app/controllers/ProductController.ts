@@ -24,8 +24,8 @@ class ProductController {
         description,
         Number(price),
         category,
-        imagePath,
-        ingredientsToRequest
+        ingredientsToRequest,
+        imagePath
       );
       return response.status(201).json(product);
     } catch (error) {
