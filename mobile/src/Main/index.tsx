@@ -125,7 +125,7 @@ export function Main() {
                   <CenteredContainer>
                     <Empty />
                     <Text color="#666666" style={{ marginTop: 24 }}>
-                      Nenhum produto foi encontrado!
+                      No product was found!
                     </Text>
                   </CenteredContainer>
                 )}
@@ -149,7 +149,7 @@ export function Main() {
               disabled={isLoading}
               onPress={() => setIsTableModalVisible(true)}
             >
-              Novo Pedido
+              New Order
             </Button>
           )}
         </FooterContainer>

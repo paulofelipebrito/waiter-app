@@ -117,7 +117,7 @@ export function Cart({
               </Text>
             </>
           ) : (
-            <Text color="#999999">Seu carrinho está vazio</Text>
+            <Text color="#999999">Your chart is empty</Text>
           )}
         </TotalContainer>
         <Button
@@ -125,7 +125,7 @@ export function Cart({
           disabled={cartItems.length === 0}
           onPress={handleConfirmOrder}
         >
-          Confirmar pedido
+          Confirm order
         </Button>
       </Summary>
     </>

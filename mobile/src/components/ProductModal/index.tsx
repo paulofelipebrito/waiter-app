@@ -65,7 +65,7 @@ export function ProductModal({
         {product.ingredients.length > 0 && (
           <IngredientsContainer>
             <Text weight="600" color="#666666">
-              Ingredientes
+              Ingredients
             </Text>
             <FlatList
               data={product.ingredients}
@@ -87,12 +87,12 @@ export function ProductModal({
       <Footer>
         <FooterContainer>
           <PriceContainer>
-            <Text color="#666666">Preço</Text>
+            <Text color="#666666">Price</Text>
             <Text size={20} weight="600">
               {formatCurrency(product.price)}
             </Text>
           </PriceContainer>
-          <Button onPress={handleAddToCart}>Adicionar ao pedido</Button>
+          <Button onPress={handleAddToCart}>Add to order</Button>
         </FooterContainer>
       </Footer>
     </Modal>

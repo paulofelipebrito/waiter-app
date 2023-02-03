@@ -11,17 +11,17 @@ export const categories = [
   },
   {
     _id: '63741b76c9a816e4dc617681',
-    name: 'Vinhos',
+    name: 'Wine',
     icon: '🍷',
   },
   {
     _id: '63741bd6c9a816e4dc617683',
-    name: 'Promoção',
+    name: 'Promotion',
     icon: '🏷',
   },
   {
     _id: '6374279ca014044d952ad9e5',
-    name: 'Bebidas',
+    name: 'Drinks',
     icon: '🥃',
   },
   {

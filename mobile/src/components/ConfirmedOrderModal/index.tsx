@@ -20,10 +20,10 @@ export function ConfirmedOrderModal({
       <Container>
         <CheckCircle />
         <Text size={20} weight="600" color="#ffffff" style={{ marginTop: 12 }}>
-          Pedido confirmado
+          Order confirmed
         </Text>
         <Text color="#ffffff" opacity={0.8} style={{ marginTop: 4 }}>
-          O pedido já entrou na fila de produção!
+          The order has already entered the production queue!
         </Text>
         <OkButton onPress={onOk}>
           <Text color="#d73035" weight="600">

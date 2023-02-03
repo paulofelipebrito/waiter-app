@@ -14,7 +14,7 @@ export function Header({ selectedTable, onCancelOrder }: HeaderProps) {
       {!selectedTable && (
         <>
           <Text size={14} opacity={0.9}>
-            Bem vindo(a) ao
+            Welcome to
           </Text>
           <Text size={24} weight="700">
             WAITER<Text size={24}>APP</Text>
@@ -25,16 +25,16 @@ export function Header({ selectedTable, onCancelOrder }: HeaderProps) {
         <Content>
           <OrderHeader>
             <Text size={24} weight="600">
-              Pedido
+              Order
             </Text>
             <TouchableOpacity onPress={onCancelOrder}>
               <Text color="#d73035" weight="600">
-                Cancelar Pedido
+                Cancel Order
               </Text>
             </TouchableOpacity>
           </OrderHeader>
           <Table>
-            <Text color="#666666">Mesa {selectedTable}</Text>
+            <Text color="#666666">Table {selectedTable}</Text>
           </Table>
         </Content>
       )}
