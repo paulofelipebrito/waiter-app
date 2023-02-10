@@ -75,7 +75,7 @@ export function Cart({
               <ProductContainer>
                 <Image
                   source={{
-                    uri: `http://192.168.0.253:3333/uploads/${cartItem.product.imagePath}`,
+                    uri: `http://192.168.0.101:3001/uploads/${cartItem.product.imagePath}`,
                   }}
                 />
                 <QuantityContainer>
@@ -97,10 +97,10 @@ export function Cart({
                   style={{ marginRight: 24 }}
                   onPress={() => onAdd(cartItem.product)}
                 >
-                  <PlusCircle />
+                  <PlusCircle/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => onRemove(cartItem.product)}>
-                  <MinusCircle />
+                  <MinusCircle/>
                 </TouchableOpacity>
               </Actions>
             </Item>
